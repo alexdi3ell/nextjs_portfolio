@@ -2,6 +2,7 @@ import React from 'react';
 import BaseLayout from '../components/layouts/BaseLayout';
 import { withRouter } from 'next/router'
 import axios from 'axios';
+import BasePage from '../components/shared/BasePage';
 
 class Portfolio extends React.Component{
     
@@ -22,9 +23,12 @@ class Portfolio extends React.Component{
             const { portfolio } = this.props;
         return(
             <BaseLayout> 
-                <h1> {portfolio.title}</h1>
-                <p>BODY: {portfolio.body}</p>
-                <p>ID: {portfolio.id}</p>
+                <BasePage className="about-page">
+                    <h1> {portfolio.title}</h1>
+                    <p>BODY: {portfolio.body}</p>
+                    <p>ID: {portfolio.id}</p>
+                </BasePage>
+                
             </BaseLayout>
         )
     }
