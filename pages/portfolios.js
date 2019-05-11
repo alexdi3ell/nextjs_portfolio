@@ -6,7 +6,6 @@ import BasePage from '../components/shared/BasePage';
 
 
 class Portfolios extends React.Component{
-
     static async getInitialProps() {
             let posts = {};
              try {
@@ -31,6 +30,8 @@ class Portfolios extends React.Component{
     }
 
     render() {
+console.log('open portfolio')
+
         const { posts } = this.props;
         return(
             <BaseLayout>
