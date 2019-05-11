@@ -1,10 +1,10 @@
 import React from 'react';
-import BaseLayout from '../components/layouts/BaseLayout';
+import BaseLayout from '../components/layouts/BaseLayout.js';
 
-class Blogs extends React.components {
+class Blogs extends React.Component{
 
     render() {
-        return (
+        return(
             <BaseLayout> 
                 <h1> I'm a Blogs page</h1>
             </BaseLayout>
