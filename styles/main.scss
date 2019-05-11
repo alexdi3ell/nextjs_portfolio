@@ -8,6 +8,10 @@ html, body {
     font-family: 'Montserrat', 'Helvetica' !important;
 }
 
+.clickable {
+    cursor: pointer;    
+}
+
 .customClassFromFile {
     color: blue;
 }
@@ -31,3 +35,4 @@ html, body {
     padding-top: 150px;
     color: white;
 }
+
