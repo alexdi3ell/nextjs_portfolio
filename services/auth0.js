@@ -31,15 +31,13 @@ import Cookies from 'js-cookie';
                 });
             })
         }
-    
+       
         setSession(authResult) {
-            debugger;
             // Set the time that the Access Token will expire at
             const expiresAt = (authResult.expiresIn * 1000) + new Date().getTime();
-
             Cookies.set('user', authResult.idTokenPayload);
             Cookies.set('jwt', authResult.idToken);
-            Cookies.set('expiresAt', authResult.expiresAt);
+            Cookies.set('expiresAt', expiresAt);
           }
 
         logout() {
